@@ -1,2 +1,134 @@
-# Mod2-Solution
-solution for module 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            margin: 0 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.75em; /* 75% larger than base */
+            margin: 30px 0;
+            color: #333;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .section {
+            background-color: #999;
+            border: 1px solid black;
+            margin: 15px;
+            position: relative;
+            padding: 40px 15px 15px 15px;
+        }
+
+        .section-title {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #d59898;
+            border: 1px solid black;
+            padding: 8px 25px;
+            font-size: 1.25em; /* 25% larger than base */
+            font-weight: bold;
+            color: black;
+        }
+
+        .section p {
+            color: black;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+
+        /* Specific colors for each section title */
+        .chicken-title {
+            background-color: #d59898;
+        }
+
+        .beef-title {
+            background-color: #c14543;
+            color: white;
+        }
+
+        .sushi-title {
+            background-color: #e5d198;
+        }
+
+        /* Desktop view - 992px and above */
+        @media (min-width: 992px) {
+            .col-lg-4 {
+                float: left;
+                width: 33.33%;
+            }
+        }
+
+        /* Tablet view - 768px to 991px */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .col-md-6 {
+                float: left;
+                width: 50%;
+            }
+            .col-md-12 {
+                float: left;
+                width: 100%;
+            }
+        }
+
+        /* Mobile view - 767px and below */
+        @media (max-width: 767px) {
+            .col-sm-12 {
+                float: left;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Menu</h1>
+        
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="section">
+                    <div class="section-title chicken-title">Chicken</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="section">
+                    <div class="section-title beef-title">Beef</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="section">
+                    <div class="section-title sushi-title">Sushi</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
